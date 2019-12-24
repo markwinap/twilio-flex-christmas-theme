@@ -1,0 +1,13 @@
+[
+  {
+    "name": "plugin-christmas",
+    "version": "0.0.0",
+    "class": "ChristmasPlugin",
+    "requires": [
+      {
+        "@twilio/flex-ui": "^1"
+      }
+    ],
+    "src": "http://localhost:3000/plugin-christmas.js"
+  }
+]
