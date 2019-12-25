@@ -6,6 +6,8 @@ import CustomTaskListContainer from './components/CustomTaskList/CustomTaskList.
 import reducers, { namespace } from './states';
 
 import CustomTheme from './CustomTheme'
+import CustomPhrases from './CustomPhrases'
+
 
 const PLUGIN_NAME = 'ChristmasPlugin';
 
@@ -27,6 +29,11 @@ export default class ChristmasPlugin extends FlexPlugin {
         colorTheme: CustomTheme
     };
     manager.updateConfig(configuration);
+    flex.MainHeader.Content.add(<CustomPhrases key="CustomPhrases"/>, {
+      sortOrder: -1, 
+      align: "end"
+    });
+
   }
 
   /**
